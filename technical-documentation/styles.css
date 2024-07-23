@@ -46,6 +46,11 @@ a.nav-link {
     color: gray;
 }
 
+a.nav-link:hover {
+    background-color: #2da6a6;
+    color: white;
+}
+
 #main-doc {
     margin-left: 300px;
 }
