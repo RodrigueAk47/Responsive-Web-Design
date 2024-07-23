@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+    color: #5e5c5c;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar {
+    border-right: 2px solid #5e5c5c;
+    width: 250px;
+    padding: 10px;
+    position: fixed;
+
+    height: 100vh;
+}
+
+#navbar header {
+    padding: 15px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+
+a.nav-link {
+
+    border-top: 1px solid #5e5c5c;
+    display: block;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: gray;
+}
+
+#main-doc {
+    margin-left: 300px;
+}
+
+.main-section header {
+    margin: 25px 5px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.main-section > p {
+    margin: 19px 20px;
+
+
+
+}
+
+.main-section ul {
+    margin-left: 60px;
+}
+
+#main-doc code {
+    background: rgb(223, 223, 223);
+    display: block;
+    padding: 10px;
+    margin: 10px 25px;
+    border-radius: 5px;
+
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        display: block;
+    }
+    #main-doc {
+        margin: 0 5px;
+    }
+    #navbar {
+        position: relative;
+        top: 0;
+        height: 220px;
+        overflow-y: scroll;
+        width: 100%;
+
+    }
+
+    #navbar header {
+        position: sticky;
+        top: 0;
+        background: white;
+    }
+}
